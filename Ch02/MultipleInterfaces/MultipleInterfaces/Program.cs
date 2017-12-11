@@ -13,6 +13,12 @@ namespace MultipleInterfaces
         Boolean NeedsSave { get; set; }
     }
 
+    interface IEncryptable
+    {
+        void Encrypt();
+        void Decrypt();
+    }
+
     class Document : IStorable
     {
         private string name;
