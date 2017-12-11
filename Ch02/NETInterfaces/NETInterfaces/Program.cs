@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,14 @@ namespace NETInterfaces
         private string name;
         private Boolean mNeedsSave = false;
 
+        // INotifyPropertyChanged requires the implementation of 1 event
+        public event PropertyChangedEventHandler PropertyChanged;
 
+        // Utility function to call the PropertyChanged event
+        private void NotifyPropChanged(string propName)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
         public Document(string s) {
             name = s;
             Console.WriteLine("Created a document with name '{0}'", s);

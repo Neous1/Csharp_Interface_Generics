@@ -13,3 +13,6 @@ C:\Users\Joe Marini\Desktop\Exercise Files\Ch02\02_06\NETInterfaces\obj\Debug\NE
 C:\Users\Joe Marini\Desktop\Exercise Files\Ch02\02_06\NETInterfaces\bin\Debug\NETInterfaces.exe
 C:\Users\Joe Marini\Desktop\Exercise Files\Ch02\02_06\NETInterfaces\bin\Debug\NETInterfaces.pdb
 C:\Users\Joe Marini\Desktop\Exercise Files\Ch02\02_06\NETInterfaces\obj\Debug\NETInterfaces.csprojResolveAssemblyReference.cache
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\NETInterfaces\NETInterfaces\bin\Debug\NETInterfaces.exe.config
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\NETInterfaces\NETInterfaces\obj\Debug\NETInterfaces.exe
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\NETInterfaces\NETInterfaces\obj\Debug\NETInterfaces.pdb

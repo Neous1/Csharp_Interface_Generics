@@ -13,3 +13,6 @@ C:\Users\Joe Marini\Desktop\Exercise Files\Ch02\02_05\ExplicitInterfaces\obj\Deb
 C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\bin\Debug\ExplicitInterfaces.exe.config
 C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\obj\Debug\ExplicitInterfaces.exe
 C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\obj\Debug\ExplicitInterfaces.pdb
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\bin\Debug\ExplicitInterfaces.exe
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\bin\Debug\ExplicitInterfaces.pdb
+C:\Users\yvon\dev\CSharp_Interfaces_Generic_lynca\Ch02\ExplicitInterfaces\ExplicitInterfaces\obj\Debug\ExplicitInterfaces.csprojResolveAssemblyReference.cache
