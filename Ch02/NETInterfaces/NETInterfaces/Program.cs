@@ -37,6 +37,7 @@ namespace NETInterfaces
             get { return name; }
             set { 
                 name = value;
+                NotifyPropChanged("DocName");
             }
         }
 
@@ -52,6 +53,7 @@ namespace NETInterfaces
             get { return mNeedsSave; }
             set { 
                 mNeedsSave = value;
+                NotifyPropChanged("NeedsSave");
             }
         }
     }
@@ -61,12 +63,15 @@ namespace NETInterfaces
         static void Main(string[] args) {
             Document d = new Document("Test Document");
 
+            d.PropertyChanged += delegate (object sender, PropertyChangedEventArgs e) {
+                Console.WriteLine("Document property changed: {0}", e.PropertyName);
+            };
 
             // Change a couple properties to trigger the event
             d.DocName = "My Document";
             d.NeedsSave = true;
 
-            Console.WriteLine("\nPress Enter to continue...");
+
             Console.ReadLine();
         }
     }
