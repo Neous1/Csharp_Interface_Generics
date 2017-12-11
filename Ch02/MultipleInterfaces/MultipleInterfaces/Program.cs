@@ -19,7 +19,7 @@ namespace MultipleInterfaces
         void Decrypt();
     }
 
-    class Document : IStorable
+    class Document : IStorable , IEncryptable
     {
         private string name;
         private Boolean mNeedsSave = false;
@@ -42,6 +42,16 @@ namespace MultipleInterfaces
             get { return mNeedsSave; }
             set { mNeedsSave = value; }
         }
+
+        public void Encrypt()
+        {
+            Console.WriteLine("Encrypting the document");
+        }
+
+        public void Decrypt()
+        {
+            Console.WriteLine("Decrypting the document");
+        }
     }
 
     class Program
@@ -49,8 +59,11 @@ namespace MultipleInterfaces
         static void Main(string[] args) {
             Document d = new Document("Test Document");
 
-
-            Console.WriteLine("\nPress Enter to continue...");
+            d.Load();
+            d.Encrypt();
+            d.Save();
+            d.Decrypt();
+            d.NeedsSave = false;
             Console.ReadLine();
         }
     }
