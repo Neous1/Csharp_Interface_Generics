@@ -42,6 +42,17 @@ namespace CastingInterfaces
         static void Main(string[] args) {
             Document d = new Document("Test Document");
 
+            //use the "is" operator
+
+            if (d is IStorable)
+            {
+                d.Save();
+            }
+
+            //use the "as" operator
+            IStorable intStor = d as IStorable;
+            if(intStor != null)
+                d.Load();
 
             Console.WriteLine("\nPress Enter to continue...");
             Console.ReadLine();
