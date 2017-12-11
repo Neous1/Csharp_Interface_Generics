@@ -17,6 +17,14 @@ namespace ExplicitInterfaces
 
     class FooBar : IFoo, IBar
     {
+        void IFoo.SomeMethod()
+        {
+            Console.WriteLine("This is IFoo's SomeMethod");
+        }
+        void IBar.SomeMethod()
+        {
+            Console.WriteLine("This is IBar's SomeMethod");
+        }
         public void SomeMethod()
         {
             Console.WriteLine("This is the class SomeMethod");
@@ -26,7 +34,16 @@ namespace ExplicitInterfaces
     class Program
     {
         static void Main(string[] args) {
-            
+
+            FooBar fb = new FooBar();
+            fb.SomeMethod();
+
+            IFoo ifoo = fb as IFoo;
+            ifoo.SomeMethod();
+
+            IBar ibar = fb as IBar;
+            ibar.SomeMethod();
+
             Console.ReadLine();
         }
     }
