@@ -12,7 +12,7 @@ namespace BasicInterfaces
         void Load();
         Boolean NeedsSave { get; set; }
     }
-    class Document
+    class Document : IStorable
     {
         private string name;
 
@@ -21,16 +21,28 @@ namespace BasicInterfaces
             name = s;
             Console.WriteLine("Created a document with name '{0}'", s);
         }
+
+        public void Save()
+        {
+            Console.WriteLine("Saving the document");
+        }
+
+        public void Load()
+        {
+            Console.WriteLine("Loading the document");
+        }
+
+        public bool NeedsSave { get; set; }
     }
 
     class Program
     {
         static void Main(string[] args) {
             Document d = new Document("Test Document");
-
-
-            Console.WriteLine("\nPress Enter to continue...");
-            Console.ReadLine();
+            d.Load();
+            d.Save();
+            d.NeedsSave = false;
+            Console.WriteLine();
         }
     }
 }
